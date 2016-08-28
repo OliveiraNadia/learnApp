@@ -52,9 +52,9 @@
     <label for="perfilUsuario">Perfil de Usuário:</label>
     <select id="status" class="form-control" name="perfilUsuarios" required>
         <option value="0">----</option>
-        <option value="1">Aluno</option>
-        <option value="2">Professor</option>
-        <option value="3">Administrador</option>
+        <option value="1">Professor</option>
+        <option value="2">Administrador</option>
+        <option value="3">Aluno</option>
     </select>
   </div>
 </div>

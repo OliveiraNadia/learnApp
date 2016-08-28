@@ -112,18 +112,19 @@ class Usuario extends CI_Controller {
         }
         public function atualizar($id=null){
             
-			echo("recuperou o id? " . $id);
-            $this->verificaSessao();
+			//echo("recuperou o id? " . $id);
+            //$this->verificaSessao();
             $this->db->where('idUsuarios',$id);
 			
 			  $query = $this->db->get('usuarios');
 			 foreach($query->result() as $row){
 				 $data['nome'] = $row->nomeUsuarios;
+                                
 			 }
 			
             //$data['usuarios'] = $this->db->get('usuarios')->result();
             $this->load->view('includes/header');
-            $this->load->view('includes/menu');
+            $this->load->view('includes/menuAdm');
             $this->load->view('editarUsuario',$data);
             $this->load->view('includes/footer');
             
