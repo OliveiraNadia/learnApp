@@ -29,7 +29,7 @@ class areaProfessor extends CI_Controller {
 	{
             //$this->verificaSessao();
             $this->load->view('includes/header');
-            $this->load->view('includes/menu');           
+            $this->load->view('includes/menuProfessor');           
             $this->load->view('areaProfessor');
             $this->load->view('includes/footer');
         

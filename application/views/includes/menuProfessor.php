@@ -12,8 +12,8 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <!--<li><a href="#">Dashboard</a></li>-->
-            <li><a href="#">Configurações</a></li>
-            <li><a href="#">Perfil</a></li>
+            
+            <!-- Vai trazer o nome do usuário no banco--><li><a href="#">Olá! Professor</a></li>
             <li><a href="<?= base_url()?>inicial/logout">Logout</a></li>
           </ul>
           
@@ -25,7 +25,7 @@
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-              <li class="active"><a href="<?= base_url() ?>inicial/index">Área do Professor<span class="sr-only">(current)</span></a></li>
+              <li class="active"><a href="<?= base_url() ?>areaProfessor">Área do Professor<span class="sr-only">(current)</span></a></li>
               <li><a href="<?= base_url() ?>usuario/criarAula">Criar Aulas</a></li>
               <li><a href="<?= base_url() ?>usuario/minhasAulas">Minhas Aulas</a></li>
             <!--<li><a href="<?= base_url() ?>usuario">Contas</a></li>-->
