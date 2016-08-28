@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Dashboard Template for Bootstrap</title>
+    <title>Learnapp</title>
 
     <!-- Bootstrap core CSS -->
     <link href="<?= base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet">
@@ -32,10 +32,18 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
    
     <![endif]-->
-    
+  
+    <script src="<?= base_url()?>assets/js/jquery-3.1.0"></script>
+    <script src="<?= base_url()?>assets/js/jquery-ui.js"></script>
+    <script src="<?= base_url()?>assets/js/script.js"></script>
+     
+   <link rel="stylesheet" href="<?= base_url()?>assets/css/jquery-ui.css">
+   
+
     <!-- Custom styles for this template -->
     <link href="signin.css" rel="stylesheet">
     
+  
   </head>
 
   <body>

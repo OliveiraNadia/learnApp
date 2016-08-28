@@ -8,5 +8,11 @@
     <script src="<?= base_url(); ?>assets/js/vendor/holder.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="<?= base_url(); ?>assets/js/ie10-viewport-bug-workaround.js"></script>
+      <script src="<?= base_url()?>assets/js/jquery-3.1.0"></script>
+    <script src="<?= base_url()?>assets/js/jquery-ui.js"></script>
+    <script src="<?= base_url()?>assets/js/script.js"></script>
+     
+ 
+   
   </body>
 </html>

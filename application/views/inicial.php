@@ -20,9 +20,9 @@
                 <a href="<?= base_url()?>usuario/cadastro"><span class="text-muted">Cadastro de usuários</span></a>
             </div>
             <div class="col-xs-6 col-sm-3 placeholder">
-                <a href="<?= base_url()?>usuario/cadastrarMaterias"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail"></a>
-              <a href="<?= base_url()?>usuario/cadastrarMaterias"><h4>Cadastrar Matérias</h4></a>
-              <a href="<?= base_url()?>usuario/cadastrarMaterias"><span class="text-muted">Cadastro de matérias a cursar</span></a>
+                <a href="<?= base_url()?>usuario/cadastrarDisciplinas"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail"></a>
+              <a href="<?= base_url()?>usuario/cadastrarDisciplinas"><h4>Cadastrar Disciplinas</h4></a>
+              <a href="<?= base_url()?>usuario/cadastrarDisciplinas"><span class="text-muted">Cadastro de disciplinas a cursar</span></a>
             </div>
           </div>
 

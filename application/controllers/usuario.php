@@ -89,11 +89,11 @@ class Usuario extends CI_Controller {
             }
         }
         
-        public function cadastrarMaterias(){
+        public function cadastrarDisciplinas(){
             
             $this->load->view('includes/header');
             $this->load->view('includes/menuAdm');
-            $this->load->view('cadastrarMaterias');
+            $this->load->view('cadastrarDisciplinas');
             $this->load->view('includes/footer');
     
         }

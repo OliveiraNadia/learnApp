@@ -28,7 +28,7 @@
               <li class="active"><a href="<?= base_url()  ?>inicial">Tela Inicial<span class="sr-only">(current)</span></a></li>
             <li><a href="<?= base_url() ?>usuario">Usuários</a></li>
               <li><a href="<?= base_url() ?>usuario/cadastro">Cadastrar Usuários</a></li>
-              <li><a href="<?= base_url() ?>usuario/cadastrarMaterias">Cadastrar Matérias</a></li>
+              <li><a href="<?= base_url() ?>usuario/cadastrarDisciplinas">Cadastrar Disciplinas</a></li>
               <li><a href="<?= base_url() ?>inicial/logout">Sair</a></li>
          
           </ul>
