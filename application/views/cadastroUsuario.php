@@ -27,6 +27,7 @@
     <input type="text" class="form-control" id="telefone" name="telefoneUsuarios" required>
   </div>
   </div> 
+    
        <div class="row">  
   <div class="col-md-3">
   <div class="form-group">
@@ -51,7 +52,8 @@
     <select id="status" class="form-control" name="perfilUsuarios" required>
         <option value="0">----</option>
         <option value="1">Aluno</option>
-        <option value="2">Professor</option>              
+        <option value="2">Professor</option> 
+        <option value="3">Administrador</option>
     </select>
   </div>
 </div>

@@ -2,8 +2,8 @@
 
     <div class="container">
 
-      <form class="form-signin" method="post" action="http://localhost:8080/learnapp/inicial/logar">
-        <h2 class="form-signin-heading">Acesso Restrito</h2>
+        <form class="form-signin" method="post" action="<?= base_url()?>inicial">
+        <h2 class="form-signin-heading">Entre com o Login</h2>
         <label for="email" class="sr-only">Email </label>
         <input type="email" id="inputEmail" class="form-control" name="emailUsuarios" placeholder="Email">
         <label for="senha" class="sr-only">Senha</label>

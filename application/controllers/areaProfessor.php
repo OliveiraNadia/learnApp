@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Inicial extends CI_Controller {
+class areaProfessor extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -29,8 +29,8 @@ class Inicial extends CI_Controller {
 	{
             //$this->verificaSessao();
             $this->load->view('includes/header');
-            $this->load->view('includes/menuAdm');           
-            $this->load->view('inicial');
+            $this->load->view('includes/menu');           
+            $this->load->view('areaProfessor');
             $this->load->view('includes/footer');
         
                
@@ -69,7 +69,7 @@ class Inicial extends CI_Controller {
             public function logout(){
                 
                 $this->session->sess_destroy();
-                redirect('inicial/login');
+                redirect('inicial');
                 
             }
             

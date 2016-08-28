@@ -19,20 +19,15 @@ class Usuario extends CI_Controller {
          * 
 	 */
     
-       public function verificaSessao(){
-          
-          if($this->session->userdata('logado') == false){
-              redirect('inicial/login');
-          }
-      }
+
 
 	public function index($indice=null)
 	{  
-            $this->verificaSessao();
+           //$this->verificaSessao();
             $this->db->select('*');
             $dados['usuarios'] = $this->db->get('usuarios')->result();
             $this->load->view('includes/header');
-            $this->load->view('includes/menu');
+            $this->load->view('includes/menuAdm');
             if($indice==1)
                 {
                 $data['msg']= "Usuário cadastrado com sucesso.";
@@ -69,15 +64,15 @@ class Usuario extends CI_Controller {
 	}
         public function cadastro(){
              
-            $this->verificaSessao();
+            //$this->verificaSessao();
             $this->load->view('includes/header');
-            $this->load->view('includes/menu');
+            $this->load->view('includes/menuAdm');
             $this->load->view('includes/footer');
             $this->load->view('cadastroUsuario');
         }
         public function cadastrar(){
             
-            $this->verificaSessao();
+            //$this->verificaSessao();
             $data['nomeUsuarios'] = $this->input->post('nomeUsuarios');
             $data['emailUsuarios'] = $this->input->post('emailUsuarios');
             $data['telefoneUsuarios'] = $this->input->post('telefoneUsuarios');
@@ -94,9 +89,18 @@ class Usuario extends CI_Controller {
             }
         }
         
+        public function cadastrarMaterias(){
+            
+            $this->load->view('includes/header');
+            $this->load->view('includes/menuAdm');
+            $this->load->view('cadastrarMaterias');
+            $this->load->view('includes/footer');
+    
+        }
+        
         public function excluir($id=null){
             
-            $this->verificaSessao();
+            //$this->verificaSessao();
             $this->db->where('idUsuarios',$id);
             if($this->db->delete('usuarios')){
                 
@@ -126,7 +130,7 @@ class Usuario extends CI_Controller {
         }
          public function salvarAtualizacao(){
              
-             $this->verificaSessao();
+             //$this->verificaSessao();
              $id = $this->input->post('idUsuarios');
            
             $data['nomeUsuarios'] = $this->input->post('nomeUsuarios');
@@ -144,6 +148,22 @@ class Usuario extends CI_Controller {
                       
                 redirect('usuario/2'); 
             }
+        }
+        public function criarAula(){
+            
+            $this->load->view('includes/header');
+            $this->load->view('includes/menuProfessor');
+            $this->load->view('criarAula');
+            $this->load->view('includes/footer');
+        }
+        
+        public function minhasAulas(){
+           
+            $this->load->view('includes/header');
+            $this->load->view('includes/menuProfessor');
+            $this->load->view('minhaAulas');
+            $this->load->view('includes/footer');
+            
         }
         
 }

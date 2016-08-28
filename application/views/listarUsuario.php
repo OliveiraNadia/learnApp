@@ -4,9 +4,7 @@
                  <h1 class="page-header">Usuários</h1>  
             </div>
             
-            <div class="col-md-2">
-                <a class="btn btn-primary btn-block" href="<?= base_url()?>usuario/cadastro">Novo usuário</a>
-            </div>
+            
             
             <div class="col-md-12">
                 <table class="table table-striped">
