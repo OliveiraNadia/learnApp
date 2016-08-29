@@ -37,11 +37,8 @@
                     
       
   <div style="text-align: right">
-  
-  <button type="reset" class="btn btn-default">Cancelar</button>
-  <button type="submit" class="btn btn-primary">Enviar</button>
-      
-      <button type="reset" class="btn btn-warning">Apagar</button>
+   <button type="submit" class="btn btn-primary">Enviar</button>
+   <button type="reset" class="btn btn-warning">Apagar</button>
 </div>
-     
+ 
  </form>

@@ -50,7 +50,7 @@ class Usuario extends CI_Controller {
         }
         elseif($indice==5)
                 {
-                $data['msg']= "Usuário atualizar com sucesso.";
+                $data['msg']= "Usuário atualizado com sucesso.";
                $this->load->view('includes/msgSucesso',$data); 
             } elseif($indice==6)
                 {
@@ -78,7 +78,9 @@ class Usuario extends CI_Controller {
             $data['telefoneUsuarios'] = $this->input->post('telefoneUsuarios');
             $data['senhaUsuarios'] = $this->input->post('senhaUsuarios');
             $data['statusUsuarios'] = $this->input->post('statusUsuarios');
-            $data['perfilUsuarios'] = $this->input->post('perfilUsuarios');
+            $data['sexoUsuarios'] = $this->input->post('sexoUsuarios');
+            $data['dataNascUsuarios'] = $this->input->post('dataNascUsuarios');
+            $data['raUsuarios'] = $this->input->post('raUsuarios');
             
             if($this->db->insert('usuarios',$data)){
                 
@@ -139,6 +141,9 @@ class Usuario extends CI_Controller {
             $data['telefoneUsuarios'] = $this->input->post('telefoneUsuarios');
             $data['statusUsuarios'] = $this->input->post('statusUsuarios');
             $data['perfilUsuarios'] = $this->input->post('perfilUsuarios');
+            $data['sexoUsuarios'] = $this->input->post('sexoUsuarios');
+            $data['dataNascUsuarios'] = $this->input->post('dataNascUsuarios');
+            $data['raUsuarios'] = $this->input->post('raUsuarios');
             
             $this->db->where('idUsuarios',$id);
             
