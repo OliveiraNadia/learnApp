@@ -2,21 +2,6 @@
 
 class Inicial extends CI_Controller {
 
-	/**
-	 * Index Page for this controller.
-	 *
-	 * Maps to the following URL
-	 * 		http://example.com/index.php/welcome
-	 *	- or -  
-	 * 		http://example.com/index.php/welcome/index
-	 *	- or -
-	 * Since this controller is set as the default controller in 
-	 * config/routes.php, it's displayed at http://example.com/
-	 *
-	 * So any other public methods not prefixed with an underscore will
-	 * map to /index.php/welcome/<method_name>
-	 * @see http://codeigniter.com/user_guide/general/urls.html
-	 */
    
       public function verificaSessao(){
           
@@ -36,9 +21,7 @@ class Inicial extends CI_Controller {
                
 	}
         public function login(){
-            
-           
-            $this->load->view('includes/header');
+           $this->load->view('includes/header');
             $this->load->view('includes/menuHome');
             $this->load->view('login');
             $this->load->view('includes/footer');
@@ -54,11 +37,17 @@ class Inicial extends CI_Controller {
             $this->db->where('statusUsuarios',1);
             $data['usuarios'] = $this->db->get('usuarios')->result();
             
+            
             if(count($data['usuarios'])==1){
                 $dados['nomeUsuarios'] =$data['nomeUsuarios'][0]->nomeUsuarios;
                 $dados['idUsuarios'] =$data['idUsuarios'][0]->idUsuarios;
+                $dados['tipoPerfil']=$data['tipoPerfil'][0]->tipoPerfil;
                 $dados['logado']= true;
                 $this->session->set_userdata($dados);
+                
+                if($this->tipoPerfil){
+                    
+                }
                 redirect('inicial');
                 
             }else{

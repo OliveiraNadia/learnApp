@@ -12,9 +12,11 @@
         
   <div class="row">     
   <div class="col-md-5">
-  <div class="form-group">
-    <label for="data">Data:</label>
-     <input class="data" type="text" name="data" readyonly="readyonly"/>
+  <div class="form-group">    
+ <?= date_default_timezone_set('America/Sao_Paulo');
+$data = date('d/m/Y');
+$hora = date('H:i:s');
+echo $data; ?>
   </div>
   </div>
   </div>
