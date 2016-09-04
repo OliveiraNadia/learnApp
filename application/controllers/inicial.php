@@ -9,19 +9,24 @@ class Inicial extends CI_Controller {
               redirect('inicial/login');
           }
       }
-      public function index()
-               
+      public function index()        
 	{
             //$this->verificaSessao();
-            $this->load->view('includes/header');
-            $this->load->view('includes/menuAdm');           
+            $this->load->view('includes/header');          
             $this->load->view('inicial');
             $this->load->view('includes/footer');
         
                
 	}
-        public function login(){
+      public function areaAdministrador(){
            $this->load->view('includes/header');
+           $this->load->view('includes/menuAdm');
+           $this->load->view('areaAdministrador');
+           $this->load->view('includes/footer');
+          
+      }
+        public function login(){
+            $this->load->view('includes/header');
             $this->load->view('includes/menuHome');
             $this->load->view('login');
             $this->load->view('includes/footer');
@@ -48,10 +53,10 @@ class Inicial extends CI_Controller {
                 if($this->tipoPerfil){
                     
                 }
-                redirect('inicial');
+                redirect('inicial/areaAdministrador');
                 
             }else{
-                redirect('inicial/login');
+                redirect('inicial');
             }
                 
             }

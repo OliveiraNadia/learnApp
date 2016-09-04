@@ -14,7 +14,7 @@
             <!--<li><a href="#">Dashboard</a></li>-->
             
             <!-- Vai trazer o nome do usuário no banco--><li><a href="#">Olá! Professor</a></li>
-            <li><a href="<?= base_url()?>inicial/logout">Logout</a></li>
+            <!--<li><a href="<?//= base_url()?>inicial/logout">Logout</a></li>-->
           </ul>
           
         </div>

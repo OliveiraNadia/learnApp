@@ -1,32 +1,60 @@
 
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Learnapp</a>
+        </div>
+        <div id="evento" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right" method="post" >
+            <div class="form-group">
+             <label for="email" class="sr-only">Email </label>
+        <input type="email" id="email" class="form-control" name="emailUsuarios" placeholder="Email">
+        <label for="senha" class="sr-only">Senha</label>
+        <input type="password" id="senha" class="form-control" name="senhaUsuarios"placeholder="Senha">
+		
+        <button type="submit" class="btn btn-primary" onclick="evento()">Login</button>
+              <button type="submit" class="btn btn-primary">Esqueceu senha</button>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
 
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h1 class="page-header">Área de Administrador</h1>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h2>Learnapp</h2>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+<!--        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>-->
+      </div>
+    </div>
 
-          <div class="row placeholders">
-            <div class="col-xs-6 col-sm-3 placeholder">
-                <a href="<?= base_url()?>inicial"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail"></a>
-                <a href="<?= base_url()?>inicial"><h4>Acesso Restrito</h4></a>
-                <a href="<?= base_url()?>inicial"><span class="text-muted">Área de Administrador</span></a>
-            </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-                <a href="<?= base_url()?>usuario"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail"></a>
-             <a href="<?= base_url()?>usuario"><h4>Usuários</h4></a>
-             <a href="<?= base_url()?>usuario"><span class="text-muted">Visualizar Usuários Cadastrados</span></a>
-            </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-                <a href="<?= base_url()?>usuario/cadastro"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail"></a>
-                <a href="<?= base_url()?>usuario/cadastro"><h4>Cadastrar Usuários</h4></a>
-                <a href="<?= base_url()?>usuario/cadastro"><span class="text-muted">Cadastro de usuários</span></a>
-            </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-                <a href="<?= base_url()?>usuario/cadastrarDisciplinas"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail"></a>
-              <a href="<?= base_url()?>usuario/cadastrarDisciplinas"><h4>Cadastrar Disciplinas</h4></a>
-              <a href="<?= base_url()?>usuario/cadastrarDisciplinas"><span class="text-muted">Cadastro de disciplinas a cursar</span></a>
-            </div>
-          </div>
+    <div class="container">
+<!--       Example row of columns 
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+      </div>-->
 
-       
-          </div>
-        
-      
+      <hr>
+
+    
+    </div> <!-- /container -->

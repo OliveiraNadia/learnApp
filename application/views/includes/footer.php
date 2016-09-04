@@ -7,12 +7,14 @@
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <script src="<?= base_url(); ?>assets/js/vendor/holder.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="<?= base_url()?>assets/js/login.js"></script>
     <script src="<?= base_url(); ?>assets/js/ie10-viewport-bug-workaround.js"></script>
-      <script src="<?= base_url()?>assets/js/jquery-3.1.0"></script>
+    <script src="<?= base_url()?>assets/js/jquery-3.1.0"></script>
     <script src="<?= base_url()?>assets/js/jquery-ui.js"></script>
     <script src="<?= base_url()?>assets/js/script.js"></script>
-     
- 
-   
+  
+<!--     <footer>
+        <p>&copy; 2016 learnapp.</p>
+      </footer>-->
   </body>
 </html>
